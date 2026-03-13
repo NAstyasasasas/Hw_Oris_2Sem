@@ -1,4 +1,6 @@
+/*
 package com.example.spring.repository;
+
 
 import com.example.spring.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,3 +67,5 @@ public class UserRepository {
         }
     }
 }
+
+ */

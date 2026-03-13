@@ -12,11 +12,6 @@ public class App {
 
         UserEntity us = new UserEntity("nastya");
         UserEntity us2 = new UserEntity("Ann");
-        service.createUser(us);
-        service.createUser(us2);
-        service.delUser(us);
-        UserEntity us3 = service.getUserr("Ann");
-        service.updateUser(us3.getId(), "Anna");
 
 
     }

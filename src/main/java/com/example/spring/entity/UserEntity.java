@@ -1,13 +1,14 @@
 package com.example.spring.entity;
 
-import org.springframework.stereotype.Component;
+import java.util.UUID;
 
-@Component
 public class UserEntity {
-    private long id;
+    private UUID id;
     private String name;
 
-    public UserEntity(long id, String name) {
+    public UserEntity() {}
+
+    public UserEntity(UUID id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -16,18 +17,16 @@ public class UserEntity {
         this.name = name;
     }
 
-    public UserEntity() {}
-
-    public long getId() {
+    public UUID getId() {
         return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public void setName(String name) {
@@ -42,4 +41,3 @@ public class UserEntity {
                 '}';
     }
 }
-
