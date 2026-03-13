@@ -1,7 +1,7 @@
-import entity.UserEntity;
+import com.example.spring.entity.UserEntity;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.UserService;
+import com.example.spring.service.UserService;
 
 public class App {
     public static void main(String[] args) {

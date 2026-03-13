@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hw_dao
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+info:
+  app:
+    name: Task Manager
+    version: 1.0.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
