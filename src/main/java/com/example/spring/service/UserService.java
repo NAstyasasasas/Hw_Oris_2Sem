@@ -1,6 +1,7 @@
 package com.example.spring.service;
 
 import com.example.spring.entity.UserEntity;
+import com.example.spring.entity.UserStatus;
 import com.example.spring.repository.UserRepositoryTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -21,7 +22,7 @@ public class UserService {
     }
 
     public UserEntity createUser(String name) {
-        UserEntity user = new UserEntity(name);
+        UserEntity user = new UserEntity(name, UserStatus.PENDING);
         userRepository.save(user);
         return user;
     }

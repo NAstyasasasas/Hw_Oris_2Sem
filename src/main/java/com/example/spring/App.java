@@ -10,9 +10,5 @@ public class App {
 
         UserService service = context.getBean(UserService.class);
 
-        UserEntity us = new UserEntity("nastya");
-        UserEntity us2 = new UserEntity("Ann");
-
-
     }
 }
