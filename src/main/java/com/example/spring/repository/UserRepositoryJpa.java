@@ -53,4 +53,15 @@ public class UserRepositoryJpa {
             em.remove(user);
         }
     }
+
+    public Optional<UserEntity> findByEmail(String email) {
+        try {
+            UserEntity user = em.createQuery("SELECT u FROM UserEntity u WHERE u.email = :email", UserEntity.class)
+                    .setParameter("email", email)
+                    .getSingleResult();
+            return Optional.ofNullable(user);
+        } catch (Exception e) {
+            return Optional.empty();
+        }
+    }
 }
